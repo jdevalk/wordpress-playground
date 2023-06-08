@@ -24,6 +24,11 @@
 		</style>
 	</head>
 	<body class="is-loading">
+		<script>
+			if (window.location.search.includes('mode=seamless')) {
+				document.body.classList.remove('with-background');
+			}
+		</script>
 		<iframe
 			id="wp"
 			sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-downloads"

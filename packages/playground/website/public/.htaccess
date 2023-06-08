@@ -1,2 +1,5 @@
 RewriteEngine on
 RewriteRule ^plugin-proxy$ plugin-proxy.php [NC]
+
+RewriteCond %{QUERY_STRING} start_button=1 [NC]
+RewriteRule ^$ button.php [L]
